@@ -4,9 +4,9 @@ id = {
     "2": "Silver",
     "3": "Red Key",
     "4": "Teleporter",
-    "7": "Glowing Gem",
-    "8": "Foreign Coin",
-    "9": "Glass Orb",
+    "5": "Glowing Gem",
+    "6": "Foreign Coin",
+    "7": "Glass Orb",
 }
 
 idr = {v: k for k, v in id.items()}

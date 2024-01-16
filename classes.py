@@ -340,6 +340,7 @@ class Town:
     def interact(self, p, game):
         n = p.capitalize()
 
+        # Crazy recursion that I think shouldnt work and should break python
         Home = Town(
             "Home",
             [],
@@ -378,6 +379,16 @@ class Town:
                         "You: I don't know any of you.",
                     ],
                 ),
+                NPC(
+                    "Miner",
+                    [
+                        "Miner: You famous around here?",
+                        "You: I guess?",
+                        "Miner: Have some stone, it's an honor.",
+                        "You: What...",
+                    ],
+                    "Stone",
+                ),
             ],
         )
         Dallas = Town(
@@ -413,6 +424,15 @@ class Town:
                     ],
                 ),
                 NPC("Lily", ["Lily: Sorry, I don't speak to outsiders."]),
+                NPC(
+                    "Miner",
+                    [
+                        "Miner: Oh, you're here, everyone knows you, you apparently live in another world where everyone else is from. They all expect you to save them.",
+                        italic("Why me?..."),
+                        "Miner: Take some gold, it might help!",
+                    ],
+                    "Gold",
+                ),
             ],
         )
 
@@ -443,7 +463,15 @@ class Town:
                         "You: Ok...",
                         italic("That was weird..."),
                     ],
-                )
+                ),
+                NPC(
+                    "Miner",
+                    [
+                        "Miner: I've heard of you...",
+                        "Miner: Take some silver, it might help!",
+                    ],
+                    "Silver",
+                ),
             ],
         )
 

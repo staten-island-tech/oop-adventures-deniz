@@ -41,6 +41,16 @@ London = Town(
                 "You: I don't know any of you.",
             ],
         ),
+        NPC(
+            "Miner",
+            [
+                "Miner: You famous around here?",
+                "You: I guess?",
+                "Miner: Have some stone, it's an honor.",
+                "You: What...",
+            ],
+            "Stone",
+        ),
     ],
 )
 Dallas = Town(
@@ -76,6 +86,15 @@ Buffalo = Town(
             ],
         ),
         NPC("Lily", ["Lily: Sorry, I don't speak to outsiders."]),
+        NPC(
+            "Miner",
+            [
+                "Miner: Oh, you're here, everyone knows you, you apparently live in another world where everyone else is from. They all expect you to save them.",
+                italic("Why me?..."),
+                "Miner: Take some gold, it might help!",
+            ],
+            "Gold",
+        ),
     ],
 )
 
