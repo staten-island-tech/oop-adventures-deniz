@@ -2,6 +2,7 @@ from classes import Town, NPC, Shop, Game
 from functions import italic
 import json
 
+# Crazy recursion that I think shouldnt work and should break python
 Home = Town(
     "Home",
     [],
